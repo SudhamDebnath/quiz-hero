@@ -20,39 +20,91 @@
                 <a rel="noopener noreferrer" href="#" class="p-1 hover:underline">#DaisyUI</a>
                 <a rel="noopener noreferrer" href="#" class="p-1 hover:underline">#TailwindCSS</a>
                 <a rel="noopener noreferrer" href="#" class="p-1 hover:underline">#HTML_CSS</a>
+                <a rel="noopener noreferrer" href="#" class="p-1 hover:underline">#JavaScript</a>
             </div>
             <p class="text-sm dark:text-gray-400">by
                 <a href="#" target="_blank" rel="noopener noreferrer" class="hover:underline dark:text-violet-400">
                     <span>Pitush Debnath</span>
                 </a>on
-                <time datetime="2021-02-12 15:34:18-0200">Feb 18th 2023</time>
+                <time datetime="2021-02-12 15:34:18-0200">16th March 2023</time>
             </p>
         </div>
         <div class="dark:text-gray-100">
 
-            <h1 class="font-bold">1.What is DOM? What is the purpose of DOM?</h1>
-            <p>Web documents have a programming interface called the Document Object Model (DOM). Since that software
-                can alter the document's structure, appearance, and content, it serves as a representation of the page.
-                Programming languages can communicate with a page by interacting with the nodes and objects that the DOM
-                uses to represent the document.</p>
-            <p>An application programming interface (API) for HTML and XML documents is called the Document Object Model
-                (DOM). It specifies how a document is accessed and handled, as well as its logical structure.</p> <br>
+            <h1 class="font-bold">1.Difference between Map, Filter, Foreach and Find method-</h1>
+            <p>Map, filter, forEach, and find are all commonly used methods in programming languages that operate on arrays or other collections of data. <br>
 
-            <h1 class="font-bold">2.How to select HTML elements using DOM? Name the DOM methods.</h1>
-            <p>There are five different ways to use selectors to choose elements in a DOM- <br>
-                1.getElementsByTagName() <br>
-                2.getElementsByClassName() <br>
-                3.getElementById() <br>
-                4.querySelector() <br>
-                5.querySelectorAll()
+                Map: The map() method is used to transform each element of an array by applying a given function to it. It returns a new array with the transformed values, leaving the original array unchanged. <br>
+
+                Example:
+                const numbers = [1, 2, 3, 4, 5];
+                const doubled = numbers.map(num => num * 2);
+                // doubled is now [2, 4, 6, 8, 10] <br>
+
+                Filter: The filter() method is used to create a new array with all elements that pass the test implemented by a given function. It returns a new array with the filtered values, leaving the original array unchanged. <br>
+
+                Example:
+                const numbers = [1, 2, 3, 4, 5];
+                const even = numbers.filter(num => num % 2 === 0);
+                // even is now [2, 4] <br>
+
+                forEach: The forEach() method is used to loop over each element of an array and execute a given function for each element. It does not return a new array, and it cannot be used to modify the original array. <br>
+
+                Example:
+                const numbers = [1, 2, 3, 4, 5];
+                numbers.forEach(num => console.log(num));
+                // outputs 1, 2, 3, 4, 5 <br>
+
+                Find: The find() method is used to return the value of the first element in an array that satisfies a given condition. It returns the value of the first element that satisfies the condition, or undefined if no such element is found. <br>
+                Example:
+                const numbers = [1, 2, 3, 4, 5];
+                const even = numbers.find(num => num % 2 === 0);
+                // even is now 2
+                <br>
+                In summary, map() and filter() are used to transform and filter arrays respectively, while forEach() is used for looping over arrays without modifying them. find() is used to locate the first element in an array that meets a given condition.</p>
+           <br>
+
+            <h1 class="font-bold">2. Difference between local storage, session storage and cookies</h1>
+            <p> Local storage, session storage, and cookies are all ways to store data in the browser. However, there are some key differences between them:
+
+                Scope of storage: Cookies are sent to the server with every request, so they can be accessed both on the client-side and server-side. Local storage and session storage, on the other hand, are only accessible on the client-side.
+                
+                Expiration: Cookies have an expiration date and can be set to last for a specific amount of time or until the browser is closed. Local storage and session storage, however, do not have an expiration date and can persist even after the browser is closed.
+                
+                Storage capacity: Cookies have a storage capacity of up to 4KB, while local storage and session storage can store up to 5-10 MB of data.
+                
+                Accessibility: Cookies can be accessed by JavaScript code running on any website, while local storage and session storage are only accessible within the same origin (domain, protocol, and port).
+                
+                Automatic deletion: Cookies can be automatically deleted by the browser based on their expiration date or other criteria, while local storage and session storage can only be deleted manually or by clearing browser data.
+                
+                In summary, cookies are typically used for storing small amounts of data that need to be sent to the server, while local storage and session storage are used for storing larger amounts of data on the client-side for use within the same website.
             </p> <br>
 
-            <h1 class="font-bold">3.What is event bubble?</h1>
-            <p>The DOM has a concept known as event bubbling (Document Object Model). The event bubbles up (or you could say is transmitted or propagated) to the element's parent and grandparent elements in the DOM tree until it reaches the root element once an element receives an event.</p> <br>
+            <h1 class="font-bold">3.What is event loop and how does it work?</h1>
+            <p>An event loop is a mechanism used by computer programs to manage and respond to external events such as user input, network requests, and timers. It is a fundamental part of many programming frameworks and environments, including web browsers, Node.js, and many GUI toolkits.
 
-            <h1 class="font-bold">4.What is callback function? why will you use it?</h1>
-            <p> A callback function is a function that receives an argument from another function and is subsequently called from inside the outer function to finish a task or activity.</p>
-            <p>Due to the fact that many JavaScript activities are asynchronous, callback methods are required. Instead, it runs in the background when the rest of the code is being executed. The function of a callback is to run code in response to an event.</p>
+                The basic idea of an event loop is to continually monitor a queue of incoming events, and execute handlers for each event as they are processed. When an event occurs, it is added to the queue, and the event loop checks the queue to see if any events are waiting. If so, it retrieves the next event from the queue, and calls the appropriate handler function to process it. Once the handler is finished, the event loop moves on to the next event in the queue, and so on.
+                
+                This model allows programs to respond to events in an asynchronous and non-blocking way, since each event is processed independently of other events. It also enables programs to handle large numbers of events without blocking or freezing, since the event loop can continue to process events while other tasks are running.
+                
+                In a typical event loop implementation, the event queue is maintained as a simple data structure such as a queue or linked list, and the event handlers are implemented as callbacks or other functions that are registered with the event loop. The event loop itself typically runs in a dedicated thread or process, and may also include additional features such as timers, signals, and I/O operations.</p> <br>
+
+            <h1 class="font-bold">Works of quizTimer function and chooseQuiz function in code noChange</h1> <br>
+            <p>The quizTimer function is responsible for running a timer for a quiz. It takes a single parameter dismiss, which is a boolean indicating whether to dismiss the timer.
+
+                If dismiss is true, the function clears the interval of the timer using the clearInterval method and returns.
+                
+                If dismiss is false, the function creates an interval using the setInterval method, which runs a callback function every second.
+                
+                The callback function updates the timer display on the webpage by selecting the element with the ID "count" using document.querySelector. It calculates the minutes and seconds remaining from the count variable, which is a global variable that increments every second.
+                
+                The minutes and seconds are formatted as strings, with leading zeros added if necessary. These are concatenated with a colon to form a time string, which is displayed in the HTML using innerHTML.
+                
+                If the count variable is greater than 60, the function changes the text color of the timer every two seconds to make it more noticeable. It toggles between the classes text-red-300 and text-red-700 using classList.add and classList.remove.
+                
+                The timer will continue to run until the dismiss parameter is true or until the clearInterval method is called on the timer.</p>
+                <br>
+            <p>The chooseQuiz function takes an index and a given answer as input. It checks if the current question has already been answered by searching for its ID in the answers array. If the question has been answered before, it updates the answer for that question. Otherwise, it adds a new object with the question ID and the given answer to the answers array. Finally, it calls the displayAnswers function to display the updated list of answers.</p>
         </div>
     </article>
 
