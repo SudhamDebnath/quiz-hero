@@ -13,59 +13,67 @@
 
 <body>
 
-    <!-- Section 1 -->
-    <article class="max-w-2xl px-6 py-24 mx-auto space-y-16 dark:text-black">
+    <!-- Header Section -->
+    <article class="max-w-2xl px-6 py-24 mx-auto space-y-16">
         <div class="w-full mx-auto space-y-4">
-            <h1 class="text-5xl font-bold leading-none">In This Blog Section</h1>
-            <div class="flex flex-wrap space-x-2 text-bold dark:text-gray-400">
-                <a rel="noopener noreferrer" href="#" class="p-1 hover:underline">#DaisyUI</a>
-                <a rel="noopener noreferrer" href="#" class="p-1 hover:underline">#TailwindCSS</a>
-                <a rel="noopener noreferrer" href="#" class="p-1 hover:underline">#HTML_CSS</a>
-                <a rel="noopener noreferrer" href="#" class="p-1 hover:underline">#JavaScript</a>
+            <h1 class="text-5xl font-bold leading-none text-center text-green-500">In This Blog Section</h1>
+            <div class="flex flex-wrap text-bold dark:text-gray-400 justify-center">
+              <a rel="noopener noreferrer" href="#" class="p-1 hover:underline">#HTML_CSS</a>
+              <a rel="noopener noreferrer" href="#" class="p-1 hover:underline">#TailwindCSS</a>
+              <a rel="noopener noreferrer" href="#" class="p-1 hover:underline">#DaisyUI</a>
+              <a rel="noopener noreferrer" href="#" class="p-1 hover:underline">#JavaScript</a>
             </div>
-            <p class="text-bold dark:text-gray-400">by
+            <p class="text-bold dark:text-gray-400 text-center">Blog by
                 <a href="#" target="_blank" rel="noopener noreferrer" class="hover:underline dark:text-violet-400">
                     <span>Pitush Debnath</span>
                 </a>on
-                <time datetime="2021-02-12 15:34:18-0200">16th March 2023</time>
+                <time datetime="2021-02-12 15:34:18-0200">16th March, 2023</time>
             </p>
         </div>
  
     </article>
 
+    <!-- Horizontal Line -->
+    <div class="inline-flex items-center justify-center w-full">
+      <hr class="w-64 h-1 my-8 bg-gray-400 border-0 rounded ">
+      <div class="absolute px-4 -translate-x-1/2 bg-white left-1/2">
+          <svg aria-hidden="true" class="w-5 h-5 text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/></svg>
+      </div>
+    </div>
 
-    <!-- Section 2 -->
+
+    <!-- Blog Section -->
     
-    <section class="text-gray-600 body-font overflow-hidden">
+    <section class="text-gray-600 body-font overflow-hidden mx-20">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-wrap -m-12">
             <div class="p-12 md:w-1/2 flex flex-col items-start">
-              <span class="inline-block py-1 px-2 rounded bg-green-50 text-green-500 text-xs font-medium tracking-widest">CATEGORY</span>
+              <span class="inline-block py-1 px-2 rounded bg-green-50 text-green-500 text-xs font-medium tracking-widest">CATEGORY - ARRAY METHOD</span>
               <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">1. Difference between Map(), Filter(), Foreach() and Find() method - </h2>
-              <p class="leading-relaxed mb-8">Map, filter, forEach, and find are all commonly used methods in programming languages that operate on arrays or other collections of data. <br> <br>
+              <p class="leading-relaxed mb-8 text-justify">Map, filter, forEach, and find are all commonly used methods in programming languages that operate on arrays or other collections of data. <br> <br>
 
-                Map: The map() method is used to transform each element of an array by applying a given function to it. It returns a new array with the transformed values, leaving the original array unchanged. <br>
+                <span class="font-bold">Map:</span> The map() method is used to transform each element of an array by applying a given function to it. It returns a new array with the transformed values, leaving the original array unchanged. <br>
 
                 Example: <br>
                 const numbers = [1, 2, 3, 4, 5]; <br>
                 const doubled = numbers.map(num => num * 2);<br>
                 // doubled is now [2, 4, 6, 8, 10] <br> <br>
 
-                Filter: The filter() method is used to create a new array with all elements that pass the test implemented by a given function. It returns a new array with the filtered values, leaving the original array unchanged. <br>
+                <span class="font-bold">Filter:</span> The filter() method is used to create a new array with all elements that pass the test implemented by a given function. It returns a new array with the filtered values, leaving the original array unchanged. <br>
 
                 Example:<br>
                 const numbers = [1, 2, 3, 4, 5];<br>
                 const even = numbers.filter(num => num % 2 === 0);<br>
                 // even is now [2, 4] <br> <br>
 
-                forEach: The forEach() method is used to loop over each element of an array and execute a given function for each element. It does not return a new array, and it cannot be used to modify the original array. <br>
+                <span class="font-bold">forEach:</span> The forEach() method is used to loop over each element of an array and execute a given function for each element. It does not return a new array, and it cannot be used to modify the original array. <br>
 
                 Example: <br>
                 const numbers = [1, 2, 3, 4, 5];<br>
                 numbers.forEach(num => console.log(num));<br>
                 // outputs 1, 2, 3, 4, 5 <br> <br>
 
-                Find: The find() method is used to return the value of the first element in an array that satisfies a given condition. It returns the value of the first element that satisfies the condition, or undefined if no such element is found. <br>
+                <span class="font-bold">Find:</span> The find() method is used to return the value of the first element in an array that satisfies a given condition. It returns the value of the first element that satisfies the condition, or undefined if no such element is found. <br>
                 Example:<br>
                 const numbers = [1, 2, 3, 4, 5]; <br>
                 const even = numbers.find(num => num % 2 === 0);<br>
@@ -83,37 +91,37 @@
                   <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                     <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                     <circle cx="12" cy="12" r="3"></circle>
-                  </svg>1.6K
+                  </svg>3.6K
                 </span>
                 <span class="text-gray-400 inline-flex items-center leading-none text-sm">
                   <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                     <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                  </svg>12
+                  </svg>43
                 </span>
               </div>
               <a class="inline-flex items-center">
                 <img alt="blog" src="https://source.unsplash.com/random/200x200?sig=1" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
                 <span class="flex-grow flex flex-col pl-4">
                   <span class="title-font font-medium text-gray-900">Pitush Debnath</span>
-                  <span class="text-gray-400 text-xs tracking-widest mt-0.5">WEB DESIGN & UI DEVELOPER</span>
+                  <span class="text-gray-400 text-xs tracking-widest mt-0.5">UI DESIGN & WEB DEVELOPER</span>
                 </span>
               </a>
             </div>
 
             <div class="p-12 md:w-1/2 flex flex-col items-start">
-              <span class="inline-block py-1 px-2 rounded bg-green-50 text-green-500 text-xs font-medium tracking-widest">CATEGORY</span>
+              <span class="inline-block py-1 px-2 rounded bg-green-50 text-green-500 text-xs font-medium tracking-widest">CATEGORY - BROWSER</span>
               <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">2. Difference between local storage, session storage and cookies - </h2>
-              <p class="leading-relaxed mb-8">Local storage, session storage, and cookies are all ways to store data in the browser. However, there are some key differences between them: <br> <br>
+              <p class="leading-relaxed mb-8 text-justify">Local storage, session storage, and cookies are all ways to store data in the browser. However, there are some key differences between them - <br> <br>
 
-                Scope of storage: Cookies are sent to the server with every request, so they can be accessed both on the client-side and server-side. Local storage and session storage, on the other hand, are only accessible on the client-side.<br> <br>
+                <span class="font-bold">Scope of storage:</span> Cookies are sent to the server with every request, so they can be accessed both on the client-side and server-side. Local storage and session storage, on the other hand, are only accessible on the client-side.<br> <br>
                 
-                Expiration: Cookies have an expiration date and can be set to last for a specific amount of time or until the browser is closed. Local storage and session storage, however, do not have an expiration date and can persist even after the browser is closed. <br> <br>
+                <span class="font-bold">Expiration:</span> Cookies have an expiration date and can be set to last for a specific amount of time or until the browser is closed. Local storage and session storage, however, do not have an expiration date and can persist even after the browser is closed. <br> <br>
                 
-                Storage capacity: Cookies have a storage capacity of up to 4KB, while local storage and session storage can store up to 5-10 MB of data. <br> <br>
+                <span class="font-bold">Storage Capacity:</span> Cookies have a storage capacity of up to 4KB, while local storage and session storage can store up to 5-10 MB of data. <br> <br>
                 
-                Accessibility: Cookies can be accessed by JavaScript code running on any website, while local storage and session storage are only accessible within the same origin (domain, protocol, and port). <br> <br>
+                <span class="font-bold">Accessibility:</span> Cookies can be accessed by JavaScript code running on any website, while local storage and session storage are only accessible within the same origin (domain, protocol, and port). <br> <br>
                 
-                Automatic deletion: Cookies can be automatically deleted by the browser based on their expiration date or other criteria, while local storage and session storage can only be deleted manually or by clearing browser data.<br> <br>
+                <span class="font-bold">Automatic Deletion:</span> Cookies can be automatically deleted by the browser based on their expiration date or other criteria, while local storage and session storage can only be deleted manually or by clearing browser data.<br> <br>
                 
                 In summary, cookies are typically used for storing small amounts of data that need to be sent to the server, while local storage and session storage are used for storing larger amounts of data on the client-side for use within the same website.</p>
               <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
@@ -139,14 +147,14 @@
                 <img alt="blog" src="https://source.unsplash.com/random/200x200?sig=1" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
                 <span class="flex-grow flex flex-col pl-4">
                   <span class="title-font font-medium text-gray-900">Pronay Saha</span>
-                  <span class="text-gray-400 text-xs tracking-widest mt-0.5">DESIGNER</span>
+                  <span class="text-gray-400 text-xs tracking-widest mt-0.5">UI DESIGNER</span>
                 </span>
               </a>
             </div>
             <div class="p-12 md:w-1/2 flex flex-col items-start">
-              <span class="inline-block py-1 px-2 rounded bg-green-50 text-green-500 text-xs font-medium tracking-widest">CATEGORY</span>
+              <span class="inline-block py-1 px-2 rounded bg-green-50 text-green-500 text-xs font-medium tracking-widest">CATEGORY - LOOP</span>
               <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">3. What is event loop and how does it work ?</h2>
-              <p class="leading-relaxed mb-8">An event loop is a mechanism used by computer programs to manage and respond to external events such as user input, network requests, and timers. It is a fundamental part of many programming frameworks and environments, including web browsers, Node.js, and many GUI toolkit. <br> <br>
+              <p class="leading-relaxed mb-8 text-justify">An event loop is a mechanism used by computer programs to manage and respond to external events such as user input, network requests, and timers. It is a fundamental part of many programming frameworks and environments, including web browsers, Node.js, and many GUI toolkit. <br> <br>
 
                 The basic idea of an event loop is to continually monitor a queue of incoming events, and execute handlers for each event as they are processed. When an event occurs, it is added to the queue, and the event loop checks the queue to see if any events are waiting. If so, it retrieves the next event from the queue, and calls the appropriate handler function to process it. Once the handler is finished, the event loop moves on to the next event in the queue, and so on. <br><br>
                 
@@ -175,15 +183,16 @@
               <a class="inline-flex items-center">
                 <img alt="blog" src="https://source.unsplash.com/random/200x200?sig=1" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
                 <span class="flex-grow flex flex-col pl-4">
-                  <span class="title-font font-medium text-gray-900">Sadia</span>
+                  <span class="title-font font-medium text-gray-900">Sadia Binte</span>
                   <span class="text-gray-400 text-xs tracking-widest mt-0.5">UI DESIGNER</span>
                 </span>
               </a>
             </div>
             <div class="p-12 md:w-1/2 flex flex-col items-start">
-              <span class="inline-block py-1 px-2 rounded bg-green-50 text-green-500 text-xs font-medium tracking-widest">CATEGORY</span>
-              <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Works of quizTimer function and chooseQuiz function in code of noChange file.</h2>
-              <p class="leading-relaxed mb-8">The quizTimer function is responsible for running a timer for a quiz. It takes a single parameter dismiss, which is a boolean indicating whether to dismiss the timer. <br>
+              <span class="inline-block py-1 px-2 rounded bg-green-50 text-green-500 text-xs font-medium tracking-widest">CATEGORY - FUNCTION</span>
+              <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Works of quizTimer function and chooseQuiz function in the code of noChange file - </h2>
+              <p class="leading-relaxed mb-8 text-justify">
+                <span class="font-bold">quizTimer:</span> The quizTimer function is responsible for running a timer for a quiz. It takes a single parameter dismiss, which is a boolean indicating whether to dismiss the timer. <br>
 
                 If dismiss is true, the function clears the interval of the timer using the clearInterval method and returns. <br>
                 
@@ -196,7 +205,8 @@
                 If the count variable is greater than 60, the function changes the text color of the timer every two seconds to make it more noticeable. It toggles between the classes text-red-300 and text-red-700 using classList.add and classList.remove. <br>
                 
                 The timer will continue to run until the dismiss parameter is true or until the clearInterval method is called on the timer. <br> <br>
-            
+                
+                <span class="font-bold">chooseQuiz:</span>
                 The chooseQuiz function takes an index and a given answer as input. It checks if the current question has already been answered by searching for its ID in the answers array. If the question has been answered before, it updates the answer for that question. Otherwise, it adds a new object with the question ID and the given answer to the answers array. Finally, it calls the displayAnswers function to display the updated list of answers.
             </p>
               <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
@@ -221,7 +231,7 @@
               <a class="inline-flex items-center">
                 <img alt="blog" src="https://source.unsplash.com/random/200x200?sig=1" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
                 <span class="flex-grow flex flex-col pl-4">
-                  <span class="title-font font-medium text-gray-900">Jowti</span>
+                  <span class="title-font font-medium text-gray-900">Jowti Chowdhury</span>
                   <span class="text-gray-400 text-xs tracking-widest mt-0.5">WEB DESIGNER</span>
                 </span>
               </a>
