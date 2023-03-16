@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -13,100 +13,222 @@
 
 <body>
 
-    <article class="max-w-2xl px-6 py-24 mx-auto space-y-16 dark:bg-gray-800 dark:text-gray-50">
+    <!-- Section 1 -->
+    <article class="max-w-2xl px-6 py-24 mx-auto space-y-16 dark:text-black">
         <div class="w-full mx-auto space-y-4">
             <h1 class="text-5xl font-bold leading-none">In This Blog Section</h1>
-            <div class="flex flex-wrap space-x-2 text-sm dark:text-gray-400">
+            <div class="flex flex-wrap space-x-2 text-bold dark:text-gray-400">
                 <a rel="noopener noreferrer" href="#" class="p-1 hover:underline">#DaisyUI</a>
                 <a rel="noopener noreferrer" href="#" class="p-1 hover:underline">#TailwindCSS</a>
                 <a rel="noopener noreferrer" href="#" class="p-1 hover:underline">#HTML_CSS</a>
                 <a rel="noopener noreferrer" href="#" class="p-1 hover:underline">#JavaScript</a>
             </div>
-            <p class="text-sm dark:text-gray-400">by
+            <p class="text-bold dark:text-gray-400">by
                 <a href="#" target="_blank" rel="noopener noreferrer" class="hover:underline dark:text-violet-400">
                     <span>Pitush Debnath</span>
                 </a>on
                 <time datetime="2021-02-12 15:34:18-0200">16th March 2023</time>
             </p>
         </div>
-        <div class="dark:text-gray-100">
+ 
+    </article>
 
-            <h1 class="font-bold">1.Difference between Map, Filter, Foreach and Find method-</h1>
-            <p>Map, filter, forEach, and find are all commonly used methods in programming languages that operate on arrays or other collections of data. <br>
+
+    <!-- Section 2 -->
+    
+    <section class="text-gray-600 body-font overflow-hidden">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -m-12">
+            <div class="p-12 md:w-1/2 flex flex-col items-start">
+              <span class="inline-block py-1 px-2 rounded bg-green-50 text-green-500 text-xs font-medium tracking-widest">CATEGORY</span>
+              <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">1. Difference between Map(), Filter(), Foreach() and Find() method - </h2>
+              <p class="leading-relaxed mb-8">Map, filter, forEach, and find are all commonly used methods in programming languages that operate on arrays or other collections of data. <br> <br>
 
                 Map: The map() method is used to transform each element of an array by applying a given function to it. It returns a new array with the transformed values, leaving the original array unchanged. <br>
 
-                Example:
-                const numbers = [1, 2, 3, 4, 5];
-                const doubled = numbers.map(num => num * 2);
-                // doubled is now [2, 4, 6, 8, 10] <br>
+                Example: <br>
+                const numbers = [1, 2, 3, 4, 5]; <br>
+                const doubled = numbers.map(num => num * 2);<br>
+                // doubled is now [2, 4, 6, 8, 10] <br> <br>
 
                 Filter: The filter() method is used to create a new array with all elements that pass the test implemented by a given function. It returns a new array with the filtered values, leaving the original array unchanged. <br>
 
-                Example:
-                const numbers = [1, 2, 3, 4, 5];
-                const even = numbers.filter(num => num % 2 === 0);
-                // even is now [2, 4] <br>
+                Example:<br>
+                const numbers = [1, 2, 3, 4, 5];<br>
+                const even = numbers.filter(num => num % 2 === 0);<br>
+                // even is now [2, 4] <br> <br>
 
                 forEach: The forEach() method is used to loop over each element of an array and execute a given function for each element. It does not return a new array, and it cannot be used to modify the original array. <br>
 
-                Example:
-                const numbers = [1, 2, 3, 4, 5];
-                numbers.forEach(num => console.log(num));
-                // outputs 1, 2, 3, 4, 5 <br>
+                Example: <br>
+                const numbers = [1, 2, 3, 4, 5];<br>
+                numbers.forEach(num => console.log(num));<br>
+                // outputs 1, 2, 3, 4, 5 <br> <br>
 
                 Find: The find() method is used to return the value of the first element in an array that satisfies a given condition. It returns the value of the first element that satisfies the condition, or undefined if no such element is found. <br>
-                Example:
-                const numbers = [1, 2, 3, 4, 5];
-                const even = numbers.find(num => num % 2 === 0);
+                Example:<br>
+                const numbers = [1, 2, 3, 4, 5]; <br>
+                const even = numbers.find(num => num % 2 === 0);<br>
                 // even is now 2
-                <br>
+                <br> <br>
                 In summary, map() and filter() are used to transform and filter arrays respectively, while forEach() is used for looping over arrays without modifying them. find() is used to locate the first element in an array that meets a given condition.</p>
-           <br>
+              <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
+                <a class="text-green-500 inline-flex items-center">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                <span class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>1.2K
+                </span>
+                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                  </svg>6
+                </span>
+              </div>
+              <a class="inline-flex items-center">
+                <img alt="blog" src="https://dummyimage.com/104x104" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                <span class="flex-grow flex flex-col pl-4">
+                  <span class="title-font font-medium text-gray-900">Pitush Debnath</span>
+                  <span class="text-gray-400 text-xs tracking-widest mt-0.5">UI DEVELOPER</span>
+                </span>
+              </a>
+            </div>
 
-            <h1 class="font-bold">2. Difference between local storage, session storage and cookies</h1>
-            <p> Local storage, session storage, and cookies are all ways to store data in the browser. However, there are some key differences between them:
+            <div class="p-12 md:w-1/2 flex flex-col items-start">
+              <span class="inline-block py-1 px-2 rounded bg-green-50 text-green-500 text-xs font-medium tracking-widest">CATEGORY</span>
+              <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">2. Difference between local storage, session storage and cookies - </h2>
+              <p class="leading-relaxed mb-8">Local storage, session storage, and cookies are all ways to store data in the browser. However, there are some key differences between them: <br> <br>
 
-                Scope of storage: Cookies are sent to the server with every request, so they can be accessed both on the client-side and server-side. Local storage and session storage, on the other hand, are only accessible on the client-side.
+                Scope of storage: Cookies are sent to the server with every request, so they can be accessed both on the client-side and server-side. Local storage and session storage, on the other hand, are only accessible on the client-side.<br> <br>
                 
-                Expiration: Cookies have an expiration date and can be set to last for a specific amount of time or until the browser is closed. Local storage and session storage, however, do not have an expiration date and can persist even after the browser is closed.
+                Expiration: Cookies have an expiration date and can be set to last for a specific amount of time or until the browser is closed. Local storage and session storage, however, do not have an expiration date and can persist even after the browser is closed. <br> <br>
                 
-                Storage capacity: Cookies have a storage capacity of up to 4KB, while local storage and session storage can store up to 5-10 MB of data.
+                Storage capacity: Cookies have a storage capacity of up to 4KB, while local storage and session storage can store up to 5-10 MB of data. <br> <br>
                 
-                Accessibility: Cookies can be accessed by JavaScript code running on any website, while local storage and session storage are only accessible within the same origin (domain, protocol, and port).
+                Accessibility: Cookies can be accessed by JavaScript code running on any website, while local storage and session storage are only accessible within the same origin (domain, protocol, and port). <br> <br>
                 
-                Automatic deletion: Cookies can be automatically deleted by the browser based on their expiration date or other criteria, while local storage and session storage can only be deleted manually or by clearing browser data.
+                Automatic deletion: Cookies can be automatically deleted by the browser based on their expiration date or other criteria, while local storage and session storage can only be deleted manually or by clearing browser data.<br> <br>
                 
-                In summary, cookies are typically used for storing small amounts of data that need to be sent to the server, while local storage and session storage are used for storing larger amounts of data on the client-side for use within the same website.
-            </p> <br>
+                In summary, cookies are typically used for storing small amounts of data that need to be sent to the server, while local storage and session storage are used for storing larger amounts of data on the client-side for use within the same website.</p>
+              <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
+                <a class="text-green-500 inline-flex items-center">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                <span class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>1.2K
+                </span>
+                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                  </svg>6
+                </span>
+              </div>
+              <a class="inline-flex items-center">
+                <img alt="blog" src="https://dummyimage.com/103x103" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                <span class="flex-grow flex flex-col pl-4">
+                  <span class="title-font font-medium text-gray-900">Alper Kamu</span>
+                  <span class="text-gray-400 text-xs tracking-widest mt-0.5">DESIGNER</span>
+                </span>
+              </a>
+            </div>
+            <div class="p-12 md:w-1/2 flex flex-col items-start">
+              <span class="inline-block py-1 px-2 rounded bg-green-50 text-green-500 text-xs font-medium tracking-widest">CATEGORY</span>
+              <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">3. What is event loop and how does it work ?</h2>
+              <p class="leading-relaxed mb-8">An event loop is a mechanism used by computer programs to manage and respond to external events such as user input, network requests, and timers. It is a fundamental part of many programming frameworks and environments, including web browsers, Node.js, and many GUI toolkit. <br> <br>
 
-            <h1 class="font-bold">3.What is event loop and how does it work?</h1>
-            <p>An event loop is a mechanism used by computer programs to manage and respond to external events such as user input, network requests, and timers. It is a fundamental part of many programming frameworks and environments, including web browsers, Node.js, and many GUI toolkits.
+                The basic idea of an event loop is to continually monitor a queue of incoming events, and execute handlers for each event as they are processed. When an event occurs, it is added to the queue, and the event loop checks the queue to see if any events are waiting. If so, it retrieves the next event from the queue, and calls the appropriate handler function to process it. Once the handler is finished, the event loop moves on to the next event in the queue, and so on. <br><br>
+                
+                This model allows programs to respond to events in an asynchronous and non-blocking way, since each event is processed independently of other events. It also enables programs to handle large numbers of events without blocking or freezing, since the event loop can continue to process events while other tasks are running. <br><br>
+                
+                In a typical event loop implementation, the event queue is maintained as a simple data structure such as a queue or linked list, and the event handlers are implemented as callbacks or other functions that are registered with the event loop. The event loop itself typically runs in a dedicated thread or process, and may also include additional features such as timers, signals, and I/O operations.</p>
+              <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
+                <a class="text-green-500 inline-flex items-center">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                <span class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>1.2K
+                </span>
+                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                  </svg>6
+                </span>
+              </div>
+              <a class="inline-flex items-center">
+                <img alt="blog" src="https://dummyimage.com/103x103" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                <span class="flex-grow flex flex-col pl-4">
+                  <span class="title-font font-medium text-gray-900">Alper Kamu</span>
+                  <span class="text-gray-400 text-xs tracking-widest mt-0.5">DESIGNER</span>
+                </span>
+              </a>
+            </div>
+            <div class="p-12 md:w-1/2 flex flex-col items-start">
+              <span class="inline-block py-1 px-2 rounded bg-green-50 text-green-500 text-xs font-medium tracking-widest">CATEGORY</span>
+              <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Works of quizTimer function and chooseQuiz function in code of noChange file.</h2>
+              <p class="leading-relaxed mb-8">The quizTimer function is responsible for running a timer for a quiz. It takes a single parameter dismiss, which is a boolean indicating whether to dismiss the timer. <br>
 
-                The basic idea of an event loop is to continually monitor a queue of incoming events, and execute handlers for each event as they are processed. When an event occurs, it is added to the queue, and the event loop checks the queue to see if any events are waiting. If so, it retrieves the next event from the queue, and calls the appropriate handler function to process it. Once the handler is finished, the event loop moves on to the next event in the queue, and so on.
+                If dismiss is true, the function clears the interval of the timer using the clearInterval method and returns. <br>
                 
-                This model allows programs to respond to events in an asynchronous and non-blocking way, since each event is processed independently of other events. It also enables programs to handle large numbers of events without blocking or freezing, since the event loop can continue to process events while other tasks are running.
+                If dismiss is false, the function creates an interval using the setInterval method, which runs a callback function every second. <br>
                 
-                In a typical event loop implementation, the event queue is maintained as a simple data structure such as a queue or linked list, and the event handlers are implemented as callbacks or other functions that are registered with the event loop. The event loop itself typically runs in a dedicated thread or process, and may also include additional features such as timers, signals, and I/O operations.</p> <br>
-
-            <h1 class="font-bold">Works of quizTimer function and chooseQuiz function in code of noChange file.</h1> <br>
-            <p>The quizTimer function is responsible for running a timer for a quiz. It takes a single parameter dismiss, which is a boolean indicating whether to dismiss the timer.
-
-                If dismiss is true, the function clears the interval of the timer using the clearInterval method and returns.
+                The callback function updates the timer display on the webpage by selecting the element with the ID "count" using document.querySelector. It calculates the minutes and seconds remaining from the count variable, which is a global variable that increments every second. <br>
                 
-                If dismiss is false, the function creates an interval using the setInterval method, which runs a callback function every second.
+                The minutes and seconds are formatted as strings, with leading zeros added if necessary. These are concatenated with a colon to form a time string, which is displayed in the HTML using innerHTML. <br>
                 
-                The callback function updates the timer display on the webpage by selecting the element with the ID "count" using document.querySelector. It calculates the minutes and seconds remaining from the count variable, which is a global variable that increments every second.
+                If the count variable is greater than 60, the function changes the text color of the timer every two seconds to make it more noticeable. It toggles between the classes text-red-300 and text-red-700 using classList.add and classList.remove. <br>
                 
-                The minutes and seconds are formatted as strings, with leading zeros added if necessary. These are concatenated with a colon to form a time string, which is displayed in the HTML using innerHTML.
-                
-                If the count variable is greater than 60, the function changes the text color of the timer every two seconds to make it more noticeable. It toggles between the classes text-red-300 and text-red-700 using classList.add and classList.remove.
-                
-                The timer will continue to run until the dismiss parameter is true or until the clearInterval method is called on the timer.</p>
-                <br>
-            <p>The chooseQuiz function takes an index and a given answer as input. It checks if the current question has already been answered by searching for its ID in the answers array. If the question has been answered before, it updates the answer for that question. Otherwise, it adds a new object with the question ID and the given answer to the answers array. Finally, it calls the displayAnswers function to display the updated list of answers.</p>
+                The timer will continue to run until the dismiss parameter is true or until the clearInterval method is called on the timer. <br> <br>
+            
+                The chooseQuiz function takes an index and a given answer as input. It checks if the current question has already been answered by searching for its ID in the answers array. If the question has been answered before, it updates the answer for that question. Otherwise, it adds a new object with the question ID and the given answer to the answers array. Finally, it calls the displayAnswers function to display the updated list of answers.
+            </p>
+              <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
+                <a class="text-green-500 inline-flex items-center">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                <span class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>1.2K
+                </span>
+                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                  </svg>6
+                </span>
+              </div>
+              <a class="inline-flex items-center">
+                <img alt="blog" src="https://dummyimage.com/103x103" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                <span class="flex-grow flex flex-col pl-4">
+                  <span class="title-font font-medium text-gray-900">Alper Kamu</span>
+                  <span class="text-gray-400 text-xs tracking-widest mt-0.5">DESIGNER</span>
+                </span>
+              </a>
+            </div>
+          </div>
         </div>
-    </article>
+      </section>
 
 </body>
 
